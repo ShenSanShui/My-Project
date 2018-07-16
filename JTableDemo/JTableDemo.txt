@@ -1,0 +1,28 @@
+import javax.swing.*;
+import java.awt.*;
+
+//JTable跟滚动条
+
+public class JTableDemo {
+	JFrame f=new JFrame();
+	public JTableDemo(){
+		//创建组件
+		//表格的列标题
+		String[] colNames=new String[]{"姓名","性别","年龄"};
+		//表格的数据
+		String[][] datas={{"张三","男","24"},{"李四","男","24"},{"李四","男","24"},{"李四","男","24"},{"李四","男","24"}};
+		//创建JTable组件
+		JTable table=new JTable(datas,colNames);
+		//创建滚动条JScrollPane
+		JScrollPane sp=new JScrollPane(table);
+		
+		f.add(sp);
+		//窗体的属性
+		f.setBounds(300, 400, 400, 300);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setVisible(true);
+	}
+	public static void main(String[] args) {
+		new JTableDemo();
+	}
+}
