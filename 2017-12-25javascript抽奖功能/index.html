@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+	div,span,p{
+		width:140px;
+		height:140px;
+		margin:5px;
+		background:#aaa;
+		border:#000 1px solid;
+		float:left;
+		font-size:17px;
+		font-family:Verdana;
+	}
+	div.mini{
+		width:55px;
+		height:55px;
+		background-color:#aaa;
+		font-size:12px;
+	}
+	div.hide{
+		dispaly:none;
+	}
+  </style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript">
+	$(function(){
+		//$('#one').css('background','#bbffaa');
+		$('.mini').css('background','#bbffaa');
+	});
+  </script>
+ </head>
+
+ <body>
+	<div class="one" id="one">
+		id为one,class为one的mini
+		<div class="mini">class为mini</div>
+	</div>
+	<div class="one" id="two" title="test">
+		id为two,class为one，title为test的div
+		<div class="mini" title="other">class为mini,title为other</div>
+		<div class="mini" title="test">class为mini,title为other</div>
+	</div>
+	<div class="one">
+		<div class="mini" >class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini" ></div>
+	</div>
+	<div class="one">
+		<div class="mini" >class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini" >class为mini</div>
+		<div class="mini" title="test">class为mini,title为test</div>		
+	</div>
+	<div style="display:one;" class="one">style的display为none的div</div>
+	<div class="hide">class为hide的div</div>
+	<div>包含input的type为hidden的div<imput type="hidden" size="8"/></div>
+	<span id="mover">正在执行动画的&lt;span&gt;</span>
+ </body>
+</html>
