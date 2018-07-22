@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript" src="js/time.js"></script>
+<style type="text/css"> 
+#timer{
+	margin-top:90px;
+	text-align:center;
+	font-family:宋体;
+	font-size:60px;
+	 color:#0F0;
+     animation:gg .7s ease-in-out infinite alternate;
+    }
+@-webkit-keyframes gg {
+  from{
+    text-shadow: 0 0 2px #000;
+  }
+  to {
+    text-shadow: 0 0 2px #0FF;
+  }
+}
+#h{
+	text-align:center;
+	font-family:宋体;
+	font-size:60px;
+	 color:#0F0;
+     animation:gg .7s ease-in-out infinite alternate;
+    }
+#h1{
+	margin-top:370px;
+	text-align:center;
+	font-family:宋体;
+	font-size:60px;
+	 color:#0F0;
+     animation:gg .7s ease-in-out infinite alternate;
+    }
+#bd{
+	background:url(images/7.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>活动倒计时</title>
+</head>
+
+<body onload="leftTimer()" id="bd">
+<h2 id="h">距离新年还有:</h2> 
+<div id="timer"></div>
+<h2 id="h1"><a href="#">新品发布 点击进入</a></h2> 
+</body>
+</html>

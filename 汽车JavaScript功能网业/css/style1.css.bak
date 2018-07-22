@@ -1,0 +1,86 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	border:0;
+}
+.wrapper{
+	width:1000px;
+	height:280px;
+	margin:0 auto;
+	position:relative;
+}
+.preBtn{
+	position:absolute;
+	width:45px;
+	height:100px;
+	top:480px;
+	left:0px;
+	background:url("../image/spirte.png") no-repeat left top;
+	background-color:black;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	cursor:pointer;
+}
+.nextBtn{
+	position:absolute;
+	width:45px;
+	height:100px;
+	top:480px;
+	right:0px;
+	background:url("../image/spirte.png") no-repeat right top;
+	background-color:black;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	cursor:pointer;
+}
+#footer{
+	font-size:12px;
+	width:100%;
+	height:60px;
+	margin:0px;
+	padding:20px 0px 3px 0px;
+	clear:both;
+	background-color:#666;
+	text-align:center;
+}
+.tp{
+    border:1px solid red;
+}
+.GPS{ 
+     width:1000px;
+	 height:26px;
+     margin:-33px 0px 10px 0px;
+     border:1px solid red;
+	 position:relative;
+	  z-index:1;
+	 }
+ul{
+    margin-top:0px;
+	border-right:1px solid black;
+   list-style-type:none;  
+   
+}
+.li1{
+margin-bottom:-10px;
+   text-align:center;
+   font-size:24px;
+   border-right:2px solid black;
+   background-color:#666;
+   float:left;
+   width:230px;
+}
+#num{
+    margin-top:380px;
+    position:absolute;
+    border:2px solid blue;
+	width:60px;
+	height:20px;
+	top:256px;
+	right:0px;
+	color:red;
+	text-align:center;
+	}
+	

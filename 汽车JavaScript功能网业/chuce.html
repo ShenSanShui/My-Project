@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>注册页面</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/javascript.js"></script>
+     
+</head>
+
+<body background="images/12.jpg">
+
+<table class="main" border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+          
+      </tr>
+      <tr>
+        <td class="hr1">新用户注册</td>
+        </tr>
+        <tr style="height:10px;"></tr>
+
+        <from method="post" name="myfrom" id="from1">
+
+        <tr>
+        <td class="left">用户名:</td>
+        <td class="center"><input id="user" type="text" class="inputClass"onblur="checkUser()"></td>
+        <td class="right"><div id="user1">用户名由3-16个字符组成</div></td>
+        </tr>
+		<tr>
+		<td class="left">密码:</td>
+		<td class="center"><input id="pwd" type="password" class="inputClass" onblur="checkPwd()"></td>
+		<td class="right"><div id="pwd1">密码由3-10位字符组成</div><td>
+		</tr>
+		<tr>
+		<td class="left">确认密码:</td>
+		<td class="center"><input id="repwd" type="password" class="inputClass" onblur="checkRepwd()"></td>
+		<td class="right"><div id="repwd1"></div></td>
+		</tr>
+		<tr>
+        <td class="left">电子邮箱:</td>
+		<td class="center"><input id="email" type="text" class="inputClass" onblur="checkEmail()"></td>
+		<td class="right"><div id="email1">邮箱格式示例：web@123.com</div></td>
+		</tr>
+		<tr>
+		<td class="left">手机号码:</td>
+		<td class="center"><input id="number" type="text" class="inputClass" onblur="checkNumber()"></td>
+		<td class="right"><div id="number1"></div></td>
+		</tr>
+		<tr>
+		<td class="left">出生日期:</td>
+		<td class="center"><input id="birth" type="text" class="inputClass" onblur="checkBirth()"></td>
+		<td class="right"><div id="birth1">请按xxxx-xx-xx格式输入</div></td>
+		</tr>
+		<tr>
+         <td class="left">&nbsp;</td>
+		 <td class="center"><input id="user" type="button" value="完成注册" onclick="Submit()" ></td>
+		 <td >&nbsp;</td>     
+		 </tr>
+		 </from>
+		 </table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> 显示大图  </title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+  li{ 
+	  float:left;
+	  font-size:50px;
+	  padding-left:40px;
+	  list-style-type:square;
+  }
+  ul{
+	  margin-left:750px;
+  }
+  </style>
+  <script type="text/javascript">
+   function change(tusrc){
+     document.getElementById("tu").src=tusrc;
+   }
+  </script>
+ </head>
+
+ <body>
+    <center>
+	   <img src="image/Centenario.jpg" id="tu">
+	   <p></p>
+       <ul>
+       <li onmouseover="change('image/Centenario.jpg')"></li>
+	   <li onmouseover="change('image/Aventador.jpg')"></li>
+	   <li onmouseover="change('image/Asterion.jpg')"></li>
+	   <li onmouseover="change('image/Murcielago.jpg')"></li>
+       </ul>
+	</center> 
+ </body>
+</html>
